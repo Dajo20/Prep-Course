@@ -23,7 +23,7 @@ Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, aña
 
 "Change Directory": Nos permite movernos a una nueva carpeta o "directorio"
 ```bash
-  $ cd [carpeta]
+  $ cd [carpeta]....prueba 
 ```
 
 "Make Directory": Crea una nueva carpeta en el directorio donde nos encontramos actualmente.
