@@ -33,7 +33,7 @@ function conection(status) {
         return "online";
     } else if (status === 2) {
         return "awy";
-    }esse{
+    }else{
         return "offline";
     }
 }
@@ -140,20 +140,18 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
     //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
 
-    if (num1 > num2 && num1 > num3 && num1 > 0){
-        return "nuemero 1 es mayor y positivo"
-    }else if (num1 < 0 || num2 < 0 || num3 < 0){
-        return "hay negativos"; {
-    }else if (num3 > num1 && num3 > num2){
-          var resultado = num3 + 1;
-          return resultado;
+    if(num1 < 0 || num2 < 0 || num3 < 0) {
+        return "Hay negativos";
     } else if (num1 === 0 || num2 === 0 || num3 === 0){
-          return "error";
+        return "error";
+    } else if(num1 > num2 && num1 > num2 && num1 > 0){
+        return "nuemero 1 es mayor y positivo";
+    } else if(num3 > num1 && num3 > num2){
+        var resultado = num3 + 1;
+        return resultado;
     } else {
-          return false;
-        }
-    
-    
+        return false;
+    }
 }
 
 function esPrimo(numero) {
@@ -180,12 +178,10 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 
-    if (valor === true) {
+    if(valor === true){
         return "soy verdadero";
-    } else {
-        return "soy falso",
-    }
-
+    } 
+    return "soy falso";
 }
 
 function tablaDelSeis(){
@@ -205,15 +201,13 @@ function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
 
-    var string = numero.tostring();
+    var string = numero.toString();
     var digitos = string.length;
-    if (digitos === 3) {
+    if (digitos === 3){
         return true;
-    } else {
+    } else{
         return false;
     }
-
-  
 }
 
 function doWhile(numero) {
